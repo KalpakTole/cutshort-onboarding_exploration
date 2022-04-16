@@ -1,0 +1,80 @@
+.card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-block-start: 2rem;
+	margin-inline: auto;
+}
+
+.card-container > svg > g > path {
+	fill: var(--bright-purple);
+}
+
+.header, .description {
+	margin-inline: 1rem;
+}
+
+.description {
+	margin-block-start: 0;
+	margin-block-end: 2rem;
+	color: var(--medium-gray);
+	font-weight: 600;
+}
+
+.label, .optional-text {
+	display: block;
+	font-weight: 600;
+	margin-block-start: 1rem;
+	margin-block-end: 0.5rem;
+}
+
+.label {
+	color: var(--darkest-gray);
+}
+
+.optional-text {
+	color: var(--medium-gray);
+}
+
+.input {
+	display: block;
+	width: min(26em, 90vw);
+	padding: 1rem;
+	font-size: 1em;
+	border: 1px solid var(--light-gray);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.prefix-input {
+	width: min(16em, 55.38vw);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 0px;
+}
+
+::placeholder {
+	color: var(--medium-gray);
+}
+
+.input-divs {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.prefix-span {
+	background-color: var(--lightest-gray);
+	color: var(--medium-gray);
+	padding: 1rem;
+	font-size: 1em;
+	border: 1px solid var(--light-gray);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 5px;
+}

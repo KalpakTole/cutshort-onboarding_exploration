@@ -1,0 +1,12 @@
+.app-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-block-start: 1rem;
+}
+
+.app-logo {
+	width: 2.5em;
+	margin-inline: 0.5em;
+}
+

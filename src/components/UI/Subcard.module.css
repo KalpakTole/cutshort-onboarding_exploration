@@ -1,0 +1,28 @@
+.subcard-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.subcard {
+	width: 12rem;
+	padding: 2rem;
+	border: 1px solid var(--light-gray);
+	margin-inline: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.active {
+	border: 2px solid var(--bright-purple);
+}
+
+.active > svg {
+	fill: var(--bright-purple);
+}
+
+.subcard-description {
+	font-size: 0.8em;
+	color: var(--medium-gray);
+	font-weight: 600;
+}

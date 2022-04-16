@@ -1,0 +1,57 @@
+:root {
+	--bar-filled-width: 20%;
+}
+
+.stage-container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 24rem;
+	margin-block: 4rem 0rem;
+	margin-inline: auto;
+}
+
+.progress-bar-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+}
+
+.progress-bar {
+	position: relative;
+	width: 100%;
+	height: 1px;
+	background: var(--light-gray);
+	display: flex;
+	align-items: center;
+}
+
+.progress-bar::before {
+	content: '';
+	position: absolute;
+	width: var(--bar-filled-width);
+	height: 2px;
+	background: var(--bright-purple);
+	transition: all 400ms ease-in-out;
+}
+
+.stage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	border: 1px solid var(--light-gray);
+	background-color: white;
+	color: var(--darkest-gray);
+	z-index: 1;
+	transition: all 400ms ease-in-out;
+}
+
+.active {
+	background-color: var(--bright-purple);
+	color: white;
+	transition: all 400ms ease-in-out;
+}
